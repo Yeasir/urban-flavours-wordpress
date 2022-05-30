@@ -1,0 +1,543 @@
+/* ==========================================================================
+> Contacts start here
+========================================================================== */
+.contactus-text{
+
+  h3{
+    line-height: 1.6;
+    font-family: $opensans;
+  }
+  p{
+    font-size: 16px;
+    color:#636363;
+  }
+  a{
+    font-size: 16px;
+    color:#636363;
+    font-family: $opensans;
+    &:hover,  &:hover i{
+      color:$light-green;
+      transition: 2s;
+    }
+  }
+  i{
+    font-size: 16px;
+    color:#A1A1A1;
+    padding:0 15px 0 0;
+    line-height: 2.667;
+    cursor: pointer;
+    &:hover{
+      color:$light-green;
+    }
+  }
+}
+.social-title{
+  h6{
+    font-size: 16px;
+  }
+}
+
+.social-section{
+  a{
+    padding:0 43px 0 0;
+    color:#C2C2C2;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+      color:$black;
+      text-align: center;
+      transition: .2s;
+    }
+  }
+}
+
+
+.hours-text{
+
+  h6{
+    font-size: 16px;
+    line-height: 2.563;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+
+.contact-write-section{
+  padding: 45px 0;
+  background: url("../images/write-bg.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.contact-write-title{
+ h3{
+   font-family: $opensans;
+ }
+}
+
+.map-area{
+  overflow:hidden;
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.map-section{
+  min-width: 100%;
+  min-height:659px;
+}
+
+.contact-form{
+  font-family: $opensans;
+  font-size:14px;
+  width: 100%;
+  padding: 25px 25px;
+  box-sizing: border-box;
+  border-radius:0;
+  border:0;
+  color:#6f6f6f;
+  outline:0;
+  background-color: $white;
+  resize: none;
+  &:focus{
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.send-message-btn{
+  @include btn($black, $white, 18px, $opensans, $regular, auto, transparent, $light-green,  $white, transparent);
+  @include padding(15px, 15px);
+  font-weight:$medium;
+  transition-timing-function: ease-in;
+
+}
+
+/* ==========================================================================
+> Sing up start here
+========================================================================== */
+.sing-up-nvigation{
+  Padding:42px 0 52px 0;
+  & ul{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ecedee;
+    & li a{
+      color: #666;
+      font-family: $opensans;
+      font-size:18px;
+      display: block;
+      text-align: center;
+      float: left;
+      width:33.33%;
+      padding:15px 15px;
+    }
+    & .active{
+      font-size: 24px;
+      font-weight:$bold;
+      border-bottom:2px solid $light-green;
+      color:$light-green;
+    }
+  }
+}
+.cart-nav{
+   @extend .sing-up-nvigation;
+  Padding:50px 0 50px 0;
+  & ul {
+    & li a {
+      color: #111111;
+      font-family: $opensans;
+      font-size: 20px;
+      font-weight:$semi-bold;
+    }
+    & .active{
+      font-size: 20px;
+      font-weight:$semi-bold;
+      border-bottom:1px solid $light-green;
+      color:$light-green;
+    }
+
+  }
+}
+
+.sing-up-section{
+  padding: 0 0 50px 0;
+  color:$black;
+  font-weight:$bold;
+
+
+  .sing-in-left{
+
+    .form-check{
+      padding: 0;
+    }
+    .form-check-label{
+      line-height: 1.4;
+    }
+
+
+    input[type=checkbox] {
+      box-sizing: border-box;
+      padding: 0;
+      width: 20px;
+      display: initial;
+      font-family: $opensans;
+      font-weight: $semi-bold;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.19;
+      letter-spacing: normal;
+      text-align: left;
+      color: #343434;
+      cursor: pointer;
+
+    }
+
+    input[type=checkbox] {
+      visibility: hidden;
+      position: absolute;
+      margin-right: 10px;
+    }
+    input[type=checkbox] + label:before {
+      height: 15px;
+      width: 15px;
+      margin-right: 10px;
+      margin-top: 1px;
+      float: left;
+      content: " ";
+      display: block;
+      vertical-align: baseline;
+      border: 1px solid #464646;
+      background: #ffffff;
+      border-radius: 3px;
+      content: '';
+      background: $white;
+      border-radius: 3px;
+      border: 1px solid #c2c1ca;
+      position: relative;
+      cursor: pointer;
+      z-index: 0;
+
+      cursor: pointer;
+      text-align: center;
+      transition: all 250ms ease;
+
+    }
+    input[type=checkbox]+ label{
+      cursor: pointer;
+    }
+
+    input[type=checkbox]:checked + label:before {
+      background: $light-green;
+      border: 2px solid $light-green;
+      box-shadow: inset 0 0 0 2px #f4f4f4;
+    }
+    input[type=checkbox] + label:before {
+      border-radius: 50%;
+    }
+    input[type=checkbox] + label:before {
+      border-radius: 3px;
+    }
+  }
+  .sing-in-left .sing-up-check{
+    color:#909090;
+    font-size:14px;
+    a{
+      color:#4f4f4f;
+      text-decoration: underline;
+    }
+  }
+
+  .sing-in-right .sing-up-check{
+    color:#909090;
+    font-size:14px;
+    font-family: $lat0;
+  }
+
+  .form-group label{
+   font-weight: $semi-bold;
+    font-family: $opensans;
+    font-size: $base-font-size+2;
+  }
+}
+.sing-up{
+  font-family: $opensans;
+  font-size:16px;
+  width: 100%;
+  padding: 23px 23px;
+  box-sizing: border-box;
+  border-radius:0;
+  border:1px solid #E5E5E5;
+  color:#6f6f6f;
+  outline: none;
+  resize: none;
+  box-shadow: none;
+  &:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: $light-green;
+  }
+
+}
+.sing-up-btn{
+  @include btn($black, $white, 18px, $opensans, $regular, 100%, transparent, $light-green,  $white, transparent);
+  @include padding(15px, 25px);
+  font-weight: $semi-bold;
+  transition-timing-function: ease-in;
+  margin-bottom: 24px;
+}
+
+
+.upload-left-side{
+  border:1px dashed #7A8881;
+  border-radius: 3px;
+  h5{
+    padding-top:50px;
+    font-family:$opensans;
+    font-weight: $bold;
+    font-size:24px;
+    color:#444444;
+  }
+  p{
+    font-family:$lat0;
+    font-size:16px;
+    color:#868686;
+  }
+}
+
+.upload-right-side{
+  margin:0 auto;
+  border:1px solid transparent;
+  border-radius: 3px;
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  .box{
+    padding: 40px 0;
+  }
+  h5{
+    font-family:$opensans;
+    font-size:16px;
+    color:#868686;
+  }
+  p{
+    font-family:$lat0;
+    font-size:12px;
+    color:#868686;
+  }
+  a.close{
+    float: right;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: none;
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    box-shadow: none;
+    z-index: 1;
+  }
+}
+.bg-gray{
+  background-color: #616161;
+}
+
+.dash-border{
+  border: 1px dashed #7A8881;
+  h5{
+    opacity: 0.5;
+    margin: 0;
+  }
+  p{
+     opacity: 0.5;
+    margin: 0;
+  }
+}
+.or-login-btn{
+  color:#1e1e27;
+  font-size:12px;
+  font-weight:bold;
+  font-family:$opensans;
+  text-decoration: underline;
+}
+.upload-back-btn{
+  font-weight:bold;
+  transition-timing-function: ease-in;
+  &:hover{
+   color: $light-green;
+  }
+}
+
+
+.upload-next-btn{
+  @include btn($black, $white, 18px, $opensans, $regular, auto, transparent, $light-green,  $white, transparent);
+  @include padding(13px, 15px);
+  font-weight:$medium;
+  width:40%;
+  transition-timing-function: ease-in;
+}
+
+/* ==========================================================================
+> Cart start here
+========================================================================== */
+.continue-shopping-btn{
+  @include btn($black, $white, 14px, $opensans, $regular, auto, transparent, $light-green,  $white, transparent);
+  @include padding(15px, 40px);
+  font-weight: $bold;
+  display: inline-block;
+  transition-timing-function: ease-in;
+}
+.cart-order{
+  padding: 40px 15px 50px 15px;
+  margin-bottom: 40px;
+  border: 1px solid #ecedee;
+  h3{
+    font-weight:normal;
+    padding:15px 0 36px 0;
+    color:#111111;
+    font-family: $opensans;
+  }
+  p{
+    font-size: 16px;
+    color:#636363;
+    margin: 0;
+  }
+  .cart-text{
+    color:$black;
+  }
+}
+
+.cart-nvigation{
+  Padding:42px 0 52px 0;
+   & ul{
+     padding: 0;
+     margin: 0;
+     overflow: hidden;
+     border-bottom: 1px solid #BDBDBD;
+  }
+
+   & li a{
+     font-family: $opensans;
+     font-size:20px;
+     display: block;
+     text-align: center;
+     float: left;
+     color:#414141;
+      width:33.33%;
+     padding:15px 15px;
+  }
+  & .active{
+    border-bottom:1px solid #1c7430;
+    color: rgba(18, 135, 18, 0.75);
+    font-weight: 700;
+  }
+}
+
+.cart-button-section{
+  padding:45px 0  35px 0;
+}
+/* ==========================================================================
+> Contacts radio start here
+========================================================================== */
+.custom-radio {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.contact-write-section{
+
+  input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    width: 20px;
+    display: initial;
+    font-family: $opensans;
+    font-weight: $semi-bold;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #343434;
+    cursor: pointer;
+
+  }
+
+  input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+    margin-right: 10px;
+  }
+  input[type=radio] + label:before {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    margin-top: 1px;
+    float: left;
+    content: " ";
+    display: block;
+    vertical-align: baseline;
+    border: 1px solid #464646;
+    background: #ffffff;
+    border-radius: 3px;
+    content: '';
+    background: $white;
+    border-radius: 3px;
+    border: 1px solid #464646;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+
+  }
+  input[type=radio]+ label{
+    cursor: pointer;
+  }
+  input[type=radio]:checked + label{
+    font-weight: $bold;
+    color: #464646;
+  }
+  input[type=radio]:checked + label:before {
+    background: $light-green;
+    border: 2px solid $light-green;
+    box-shadow: inset 0 0 0 2px #f4f4f4;
+  }
+
+  /* CUSTOM RADIO AND CHECKBOX STYLES */
+  input[type=radio] + label:before {
+    border-radius: 50%;
+  }
+  input[type=radio] + label:before {
+    border-radius: 3px;
+  }
+}
+
+
+
+
+
+
